@@ -1,0 +1,120 @@
+body{
+    background-color: #dbdbdb;
+}
+body,html{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.connect{
+    width:1000px;
+    height:560px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-500px;
+    margin-top:-300px;
+    background-color: #fff;
+    section{
+        position: absolute;
+        left:180px;
+        right:0px;
+        top:0px;
+        bottom:0px;
+        article{
+            box-sizing: border-box;
+            padding:60px 20px;
+            height:100%;
+            width:410px;
+            color:#6b6b67;
+            font-size:1.2em;
+            h2{
+                font-size: 1.3em;
+                font-weight: normal;
+                text-align: center;
+                margin-bottom:40px;
+            }
+            ul{
+                list-style: none;
+                margin:0px;
+                padding:0px;
+                margin-left:60px;
+                li{
+                    margin:10px 5px;
+                    &:last-child{
+                        float:right;
+                        margin-right:20px;
+                    }
+                }
+                
+            }
+        }
+        
+        article.en{
+            float:left;
+            font-family: "Times New Roman";
+        }
+        article.zh{
+            float:right;
+            font-family: "KaiTi";
+        }
+    }
+    aside{
+        height:400px;
+        width:200px;
+        position: absolute;
+        left:-20px;
+        bottom:-20px;
+        /*
+        background-color:#889eaf;*/
+        background-color:#0ac2c4;
+        border-bottom:2px solid #fbff87;
+        nav{
+            height:100%;
+            width:100%;
+            ul{
+                position: relative;
+                box-sizing: border-box;
+                width:100%;
+                padding:15px 20px;
+                list-style:none;
+                margin:0px;
+                z-index:10;
+                li{
+                    border-bottom:1px dashed #fff;
+                    a{
+                        outline:none;
+                        display:block;
+                        padding:5px 10px;
+                        font-size: 1.1em;
+                        color:#fff;
+                        text-decoration:none;
+                        text-shadow: #9d9d9d 3px 1px 2px;
+                        &:hover{
+                            background-color: #fff;
+                            color:#889eaf;
+                            text-shadow: #9d9d9d 0px 0px 0px;
+                        }
+                    }
+                }
+            }
+            .logo{
+                position: absolute;
+                display:block;
+                width:150px;
+                margin-left:25px;
+                margin-right:auto;
+                bottom:0px;
+            }
+        }
+    }
+}
+.copyright{
+    position: absolute;
+    left:0px;
+    right:0px;
+    bottom:20px;
+    text-align: center;
+    font-size: 10px;
+    color:#333;
+}
